@@ -14,6 +14,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "80c0ff21-e7ce-47ec-91b5-15b6f301abd3",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -71,6 +80,39 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "d07db7e7-a8c8-4133-a152-c1e8f0af029f",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "62af4f7e-a081-468a-848f-e28cdf9756f7",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "10007854-68fb-426e-8fba-f941d63c0e6d",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

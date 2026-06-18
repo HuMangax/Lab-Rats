@@ -108,7 +108,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   body: {fileID: 7902762532207584357}
   moveSpeed: 5
+  jumpHeight: 20
   move: {fileID: 6791007257717363982, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  jump: {fileID: 3955822377535819872, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
 --- !u!50 &7902762532207584357
 Rigidbody2D:
   serializedVersion: 5
