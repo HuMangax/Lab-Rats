@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7609994635468994402}
   - component: {fileID: 8375661697194206904}
   - component: {fileID: 8395240493966516650}
+  - component: {fileID: 1079360961473450431}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -120,6 +121,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1079360961473450431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227518628367950996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d2acae93212ca9a599c5ca9cff87e22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonScript
+  body: {fileID: 3602838774435438367}
 --- !u!1 &2164175261069825973
 GameObject:
   m_ObjectHideFlags: 0
