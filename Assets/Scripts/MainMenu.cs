@@ -1,11 +1,13 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.InputSystem.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
     [Header("Scene Settings")]
-    public string gameSceneName = "SampleScene";
+    public string gameSceneName = "LevelSelect";
 
     [Header("UI References (auto-created if null)")]
     public Canvas canvas;
@@ -20,6 +22,8 @@ public class MainMenu : MonoBehaviour
 
     void CreateMenuUI()
     {
+        EnsureEventSystem();
+
         GameObject canvasObj = new GameObject("Canvas");
         canvas = canvasObj.AddComponent<Canvas>();
         canvas.renderMode = RenderMode.ScreenSpaceOverlay;
@@ -62,7 +66,11 @@ public class MainMenu : MonoBehaviour
             new Color(0.3f, 0.6f, 0.3f), new Color(0.95f, 0.95f, 0.9f));
         playButton.onClick.AddListener(PlayGame);
 
-        quitButton = CreateButton("Quit", canvasObj.transform, new Vector2(0, -120),
+        Button levelSelectButton = CreateButton("Level Select", canvasObj.transform, new Vector2(0, -120),
+            new Color(0.35f, 0.45f, 0.55f), new Color(0.95f, 0.95f, 0.9f));
+        levelSelectButton.onClick.AddListener(() => SceneManager.LoadScene("LevelSelect"));
+
+        quitButton = CreateButton("Quit", canvasObj.transform, new Vector2(0, -220),
             new Color(0.6f, 0.3f, 0.3f), new Color(0.95f, 0.95f, 0.9f));
         quitButton.onClick.AddListener(QuitGame);
     }
@@ -110,6 +118,16 @@ public class MainMenu : MonoBehaviour
         rect.anchorMax = Vector2.one;
         rect.sizeDelta = Vector2.zero;
         rect.anchoredPosition = Vector2.zero;
+    }
+
+    void EnsureEventSystem()
+    {
+        if (FindAnyObjectByType<EventSystem>() == null)
+        {
+            GameObject es = new GameObject("EventSystem");
+            es.AddComponent<EventSystem>();
+            es.AddComponent<InputSystemUIInputModule>();
+        }
     }
 
     public void PlayGame()
