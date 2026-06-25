@@ -120,20 +120,22 @@ Packages/packages-lock.json linguist-generated
 *.wmv                   lfs
 
 # Images
-*.bmp                   lfs
+# Small raster/sprite formats are kept as normal Git objects (NOT LFS) so they
+# clone/pull without requiring Git LFS. Large production formats stay in LFS.
+*.bmp                   binary
+*.gif                   binary
+*.jpeg                  binary
+*.jpg                   binary
+*.png                   binary
+*.webp                  binary
 *.exr                   lfs
-*.gif                   lfs
 *.hdr                   lfs
 *.iff                   lfs
-*.jpeg                  lfs
-*.jpg                   lfs
 *.pict                  lfs
-*.png                   lfs
 *.psd                   lfs
 *.tga                   lfs
 *.tif                   lfs
 *.tiff                  lfs
-*.webp                  lfs
 
 # Compressed Archive
 *.7z                    lfs
