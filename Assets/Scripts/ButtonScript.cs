@@ -3,16 +3,18 @@ using UnityEngine;
 public class ButtonScript : Activator
 {
     public Rigidbody2D body;
-    private float activationThreshold;
+    private float originalY;
+    private float buttonSize;
 
     void Start()
     {
-        activationThreshold = body.transform.position.y - GetComponent<Renderer>().bounds.size.y;
+        originalY = body.transform.position.y;
+        buttonSize = GetComponent<Renderer>().bounds.size.y;
     }
 
     void Update()
     {
-        bool pressed = body.transform.position.y <= activationThreshold * 0.9;
+        bool pressed = body.transform.position.y <= originalY - buttonSize * 0.9f;
         SetActive(pressed);
     }
 }
