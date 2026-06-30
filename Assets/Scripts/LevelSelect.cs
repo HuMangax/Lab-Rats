@@ -18,7 +18,7 @@ public class LevelSelect : MonoBehaviour
     public LevelEntry[] levels = new[]
     {
         new LevelEntry { name = "Level 1", sceneName = "Level_1", locked = false },
-        new LevelEntry { name = "Level 2", sceneName = "", locked = true },
+        new LevelEntry { name = "Level 2", sceneName = "Level_2", locked = false },
         new LevelEntry { name = "Level 3", sceneName = "", locked = true },
         new LevelEntry { name = "Level 4", sceneName = "", locked = true },
         new LevelEntry { name = "Level 5", sceneName = "", locked = true },
