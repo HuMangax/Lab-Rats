@@ -17,10 +17,20 @@ public class PlayerScript : MonoBehaviour
     private Animator animator;
     private SpriteRenderer spriteRenderer;
 
+    private Vector2 startPosition;
+
     void Awake()
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        startPosition = transform.position;
+    }
+
+    // Send the player back to where it started (used by spikes / hazards).
+    public void Respawn()
+    {
+        transform.position = startPosition;
+        body.linearVelocity = Vector2.zero;
     }
 
     void Update()
