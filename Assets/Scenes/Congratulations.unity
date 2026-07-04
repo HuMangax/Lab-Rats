@@ -162,7 +162,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.12, g: 0.12, b: 0.15, a: 1}
+  m_BackGroundColor: {r: 0.055, g: 0.078, b: 0.07, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
   m_RenderShadows: 1
   m_RequiresDepthTextureOption: 2
@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 600001}
   - component: {fileID: 600003}
   m_Layer: 0
-  m_Name: LevelSelectManager
+  m_Name: CongratulationsManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -288,19 +288,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 600000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73d818d4d0790462f8361ab8f50b87da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LevelSelect
-  levels:
-  - name: Level 1
-    sceneName: Level_1
-    locked: 0
-  - name: Level 2
-    sceneName: Level_2
-    locked: 0
-  - name: Level 3
-    sceneName: Level_3
-    locked: 0
+  m_Script: {fileID: 11500000, guid: 4e080ef7817d4f5890c2db88d276b9c0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Congratulations
+  playAgainScene: Level_1
+  mainMenuScene: MainMenu
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

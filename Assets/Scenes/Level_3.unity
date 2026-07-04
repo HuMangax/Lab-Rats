@@ -418,6 +418,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1117969589661581552, guid: 8b6dd27976147a10c9bf300fab6de6b8, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3812156731787308265, guid: 8b6dd27976147a10c9bf300fab6de6b8, type: 3}
       propertyPath: m_Camera
       value: 
@@ -505,6 +509,14 @@ PrefabInstance:
     - target: {fileID: 5902044643384411186, guid: 8b6dd27976147a10c9bf300fab6de6b8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018811161143403575, guid: 8b6dd27976147a10c9bf300fab6de6b8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -633
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018811161143403575, guid: 8b6dd27976147a10c9bf300fab6de6b8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -78
       objectReference: {fileID: 0}
     - target: {fileID: 8497760377345151196, guid: 8b6dd27976147a10c9bf300fab6de6b8, type: 3}
       propertyPath: m_Name
@@ -929,6 +941,10 @@ PrefabInstance:
     - target: {fileID: 4700000000000000002, guid: 1ab70000000000000000000000000009, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700000000000000005, guid: 1ab70000000000000000000000000009, type: 3}
+      propertyPath: nextSceneName
+      value: Congratulations
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
